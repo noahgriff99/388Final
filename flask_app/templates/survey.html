@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Condition of the Property</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <form action="" method="post">
+            {{ survey_form.csrf_token }}
+            <div class="form-group">
+             
+                {{ survey_form.appeal(class="form-control form-control-lg") }}
+
+            </div>
+            <div class="form-group">
+                {{ survey_form.submit }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}>
