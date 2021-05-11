@@ -99,3 +99,8 @@ def survey():
         return redirect(url_for("users.login"))
 
     return render_template("survey.html", survey_form = form)
+
+@movies.route("/about", methods=["GET", "POST"])
+def about():
+
+    return render_template("about.html")
