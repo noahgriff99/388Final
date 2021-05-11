@@ -40,6 +40,8 @@ def page_not_found(e):
 def create_app(test_config=None):
     app = Flask(__name__)
 
+    app.config["MONGODB_HOST"] = os.getenv("MONGODB_HOST")
+
     app.config['MAIL_SERVER'] = 'smtp.gmail.com'
     app.config['MAIL_PASSWORD'] = 'Hpraza9oSx8Xbi'
     app.config['MAIL_USERNAME'] = '388jfinal@gmail.com' 
